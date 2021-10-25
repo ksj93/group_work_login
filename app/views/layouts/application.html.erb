@@ -10,6 +10,10 @@
   </head>
 
   <body>
+    <div class="body_all">
+  <header><h1>ログインアプリケーション</h1>
+  </header>
+  <article class="content_block">
     <% flash.each do |key, value| %>
       <%= content_tag(:div, value, class: "#{key}") %>
     <% end %>
@@ -22,5 +26,11 @@
       <%= link_to 'Login',new_session_path %>
     <% end %>
     <%= yield %>
+  </article>
+  <footer>
+    <p>Homework.WEF2109<br>３班</p>
+  </footer>
+</div>
+
   </body>
 </html>
